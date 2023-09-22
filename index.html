@@ -13,12 +13,14 @@
   <style>
     .icon:hover {
       color: white;
-      background: rgba(21, 21 , 100);
+      background: rgba(21, 21, 100);
     }
+
     .copyright .icon:hover {
       color: #101C32;
       background: #fdc93b;
     }
+
     footer {
       font-size: 16px;
       background: #101C32;
@@ -29,6 +31,7 @@
       align-items: flex-start;
 
     }
+
     footer li {
       list-style: none;
       color: #7b838a;
@@ -36,9 +39,11 @@
       font-size: 15px;
       cursor: pointer;
     }
+
     footer li:hover {
       color: white;
     }
+
     .copyright {
       display: flex;
       justify-content: space-between;
@@ -56,11 +61,18 @@
           class="d-inline-block align-text-top cursor-pointer">
 
       </a>
+      <!-- toggle button for mobile nav -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
-    <div class="link-part mx-5">
 
+
+    <!-- nav-links -->
+    <div class="link-part mx-5" id="main-nav">
       <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse" id="main-nav">
           <ul class="navbar-nav text-dark">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#home">Home</a>
@@ -111,30 +123,38 @@
       <h1>Awesome Features</h1>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, beatae saepe exer</p>
     </div>
-    <div class="feature-card my-5 d-flex justify-content-center">
-      <div class="card me-2" style="width: 18rem;">
-        <i class="bi bi-mortarboard-fill ms-2" style="font-size: 45px;"></i>
-        <div class="card-body">
-          <h5 class="card-title">Scholarship Facility</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
+    <div class="feature-card m-5 d-flex g-0 justify-content-center">
+
+      <div class="col col-sm-8 col-lg-4 col-xl-3">
+        <div class="card" style="width: 18rem;">
+          <i class="bi bi-mortarboard-fill ms-2" style="font-size: 45px;"></i>
+          <div class="card-body">
+            <h5 class="card-title">Scholarship Facility</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
         </div>
       </div>
-      <div class="card me-2" style="width: 18rem;">
-        <i class="bi bi-file-earmark-medical-fill ms-2" style="font-size: 45px;"></i>
-        <div class="card-body">
-          <h5 class="card-title">Dell Online Courses</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
+      <div class="col col-sm-8 col-lg-4 col-xl-3">
+        <div class="card" style="width: 18rem;">
+          <i class="bi bi-file-earmark-medical-fill ms-2" style="font-size: 45px;"></i>
+          <div class="card-body">
+            <h5 class="card-title">Dell Online Courses</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
         </div>
       </div>
-      <div class="card me-2" style="width: 18rem;">
-        <i class="bi bi-award ms-2" style="font-size: 45px;"></i>
-        <div class="card-body">
-          <h5 class="card-title">Global Certification</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
+      <div class="col col-sm-8 col-lg-4 col-xl-3">
+        <div class="card" style="width: 18rem;">
+          <i class="bi bi-award ms-2" style="font-size: 45px;"></i>
+          <div class="card-body">
+            <h5 class="card-title">Global Certification</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
         </div>
+  
       </div>
     </div>
   </section>
@@ -292,39 +312,46 @@
   </section>
 
   <!-- Registration Section -->
-  <section class="d-flex justify-content-between align-items-center" id="registration" style="background-image: linear-gradient(rgba(99, 112, 168, 0.5), rgba(81, 91, 233, 0.5)), url(images/signup.jpg);height: 600px; width: 100%; background-size: cover; background-position: center;">
+  <section class="d-flex justify-content-between align-items-center my-5" id="registration"
+    style="background-image: linear-gradient(rgba(99, 112, 168, 0.5), rgba(81, 91, 233, 0.5)), url(images/signup.jpg);height: 600px; width: 100%; background-size: cover; background-position: center;">
     <div class="reminder m-5 text-white">
       <p class="mx-5">Get 100online courses for free</p>
       <h1 class="mx-5">Registration to Get it</h1>
       <div class="time m-5 d-flex">
-        <div class="date text-center py-2 px-4 mb-4 mx-2 " style="background: rgba(255, 255, 255, .25); backdrop-filter: blur(4px); box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 10px;">
+        <div class="date text-center py-2 px-4 mb-4 mx-2 "
+          style="background: rgba(255, 255, 255, .25); backdrop-filter: blur(4px); box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 10px;">
           18 <br> Days
         </div>
-        <div class="date text-center py-2 px-4 mb-4 mx-2" style="background: rgba(255, 255, 255, .25); backdrop-filter: blur(4px); box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 10px;">
+        <div class="date text-center py-2 px-4 mb-4 mx-2"
+          style="background: rgba(255, 255, 255, .25); backdrop-filter: blur(4px); box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 10px;">
           23 <br> Hours
         </div>
-        <div class="date text-center py-2 px-4 mb-4 mx-2" style="background: rgba(255, 255, 255, .25); backdrop-filter: blur(4px); box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 10px;">
+        <div class="date text-center py-2 px-4 mb-4 mx-2"
+          style="background: rgba(255, 255, 255, .25); backdrop-filter: blur(4px); box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 10px;">
           06 <br> Mins
         </div>
-        <div class="date text-center py-2 px-4 mb-4 mx-2" style="background: rgba(255, 255, 255, .25); backdrop-filter: blur(4px); box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 10px;">
+        <div class="date text-center py-2 px-4 mb-4 mx-2"
+          style="background: rgba(255, 255, 255, .25); backdrop-filter: blur(4px); box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 10px;">
           58 <br> Secs
         </div>
       </div>
 
     </div>
-    <div class="form m-5 bg-white rounded d-flex flex-column p-5" style="box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);">
+    <div class="form m-5 bg-white rounded d-flex flex-column p-5"
+      style="box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);">
       <h3>Create Free Account NOW!</h3>
       <input class="my-3 py-2 px-3 border border-primary" type="text" placeholder="Name">
       <input class="my-3 py-2 px-3 border border-primary" type="text" placeholder="Email Address">
       <input class="my-3 py-2 px-3 border border-primary" type="text" placeholder="Phone Number">
-      <button type="button" class="btn btn-warning text-white hover-overly ripple shadow-1-strong mt-2 w-50">Submit Form</button>
+      <button type="button" class="btn btn-warning text-white hover-overly ripple shadow-1-strong mt-2 w-50">Submit
+        Form</button>
 
     </div>
   </section>
 
 
   <!-- Profiles -->
-  <section id="experts" class="text-center px-3 pt-3">
+  <section id="experts" class="text-center px-3 pt-3 my-5">
     <h1>Community Experts</h1>
     <p>Replenish man have thing gathering lights yielding shall you</p>
     <div class="expert-box mx-5 text-center " style="display: flex; justify-content: center; gap: 30px;">
@@ -338,7 +365,7 @@
           <i class="icon bi bi-linkedin py-2 px-2 cursor-pointer"></i>
         </div>
       </div>
-      
+
       <div class="profile py-5 px-4" style="background-color: #fafaf1;">
         <img src="images/pro2.webp" alt="">
         <h6>Jason</h6>
@@ -349,7 +376,7 @@
           <i class="icon bi bi-linkedin py-2 px-2 cursor-pointer"></i>
         </div>
       </div>
-      
+
       <div class="profile py-5 px-4" style="background-color: #fafaf1;">
         <img src="images/pro3.webp" alt="">
         <h6>Malik</h6>
@@ -360,7 +387,7 @@
           <i class="icon bi bi-linkedin py-2 px-2 cursor-pointer"></i>
         </div>
       </div>
-      
+
       <div class="profile py-5 px-4" style="background-color: #fafaf1;">
         <img src="images/pro4.webp" alt="">
         <h6>Jenifer</h6>
@@ -371,8 +398,8 @@
           <i class="icon bi bi-linkedin py-2 px-2 cursor-pointer"></i>
         </div>
       </div>
-      
-      
+
+
     </div>
   </section>
 
@@ -422,7 +449,7 @@
         <i class="icon bi bi-linkedin py-2 px-2 cursor-pointer"></i>
       </div>
     </div>
-  
+
   </footer>
 
 
